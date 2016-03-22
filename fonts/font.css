@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Klinic Slab Bold';
+  src: url('KlinicSlabBold.eot'); /* IE9 Compat Modes */
+  src: url('KlinicSlabBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('KlinicSlabBold.woff') format('woff'), /* Modern Browsers */
+       url('KlinicSlabBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('KlinicSlabBold.svg#8e90ab6d31b9d4bc42471dae9b791b37') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'Klinic Slab Bold';
+  src: url('KlinicSlabBoldIt.eot'); /* IE9 Compat Modes */
+  src: url('KlinicSlabBoldIt.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('KlinicSlabBoldIt.woff') format('woff'), /* Modern Browsers */
+       url('KlinicSlabBoldIt.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('KlinicSlabBoldIt.svg#618c33abdbbe8e13f43a4162914a25fc') format('svg'); /* Legacy iOS */
+       
+  font-style:   italic;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'Klinic Slab Book';
+  src: url('KlinicSlabBook.eot'); /* IE9 Compat Modes */
+  src: url('KlinicSlabBook.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('KlinicSlabBook.woff') format('woff'), /* Modern Browsers */
+       url('KlinicSlabBook.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('KlinicSlabBook.svg#ef4b9a9c8bad3bc3791ab8a2756f476c') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Klinic Slab Book';
+  src: url('KlinicSlabBookIt.eot'); /* IE9 Compat Modes */
+  src: url('KlinicSlabBookIt.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('KlinicSlabBookIt.woff') format('woff'), /* Modern Browsers */
+       url('KlinicSlabBookIt.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('KlinicSlabBookIt.svg#c57518cf9b1bb131652880f11e079f6e') format('svg'); /* Legacy iOS */
+       
+  font-style:   italic;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Klinic Slab Light';
+  src: url('KlinicSlabLight.eot'); /* IE9 Compat Modes */
+  src: url('KlinicSlabLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('KlinicSlabLight.woff') format('woff'), /* Modern Browsers */
+       url('KlinicSlabLight.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('KlinicSlabLight.svg#a6c7620236ba1cde743526303763973f') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  200;
+}
+
+@font-face {
+  font-family: 'Klinic Slab Light';
+  src: url('KlinicSlabLightIt.eot'); /* IE9 Compat Modes */
+  src: url('KlinicSlabLightIt.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('KlinicSlabLightIt.woff') format('woff'), /* Modern Browsers */
+       url('KlinicSlabLightIt.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('KlinicSlabLightIt.svg#e5fa01bfa1e18638c015f7e63bfdf919') format('svg'); /* Legacy iOS */
+       
+  font-style:   italic;
+  font-weight:  200;
+}
+
+@font-face {
+  font-family: 'Klinic Slab Medium';
+  src: url('KlinicSlabMedium.eot'); /* IE9 Compat Modes */
+  src: url('KlinicSlabMedium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('KlinicSlabMedium.woff') format('woff'), /* Modern Browsers */
+       url('KlinicSlabMedium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('KlinicSlabMedium.svg#fd52dd882945bfc9b5d2bad8879c52ec') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Klinic Slab Medium';
+  src: url('KlinicSlabMediumIt.eot'); /* IE9 Compat Modes */
+  src: url('KlinicSlabMediumIt.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('KlinicSlabMediumIt.woff') format('woff'), /* Modern Browsers */
+       url('KlinicSlabMediumIt.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('KlinicSlabMediumIt.svg#07fe34313cb27300b091276b57c79ad4') format('svg'); /* Legacy iOS */
+       
+  font-style:   italic;
+  font-weight:  400;
+}
+
