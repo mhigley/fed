@@ -2977,15 +2977,22 @@ header nav li a {
 
 nav, footer {
   font-size: 1em;
-  padding: 2em 5vw;
+  padding: 2em 3vw;
+}
+
+main {
+  padding: 2em 3vw;
 }
 
 main, section {
   font-size: 1.5em;
-  padding: 2em 5vw;
 }
 
-section {
+section .sidebar {
+  padding: 2em 3vw;
+}
+
+section .ad, section .sidebar {
   background-color: #f2f2f2;
 }
 
@@ -3124,17 +3131,28 @@ footer {
             align-items: flex-start;
   }
 
-  main {
+  .flex-2col main {
     -webkit-flex: 5;
         -ms-flex: 5;
             flex: 5;
   }
-
-  section {
+  .flex-2col section {
     -webkit-flex: 2;
         -ms-flex: 2;
             flex: 2;
-    border-top-left-radius: 7.5px;
-    border-bottom-left-radius: 7.5px;
+  }
+
+  section .ad, section .sidebar {
+    margin-bottom: 2em;
+  }
+
+  section:first-of-type .ad, section:first-of-type .sidebar {
+    border-radius: 0 7.5px 7.5px 0;
+  }
+
+  section:last-of-type .ad, section:last-of-type .sidebar,
+  section:only-of-type .ad,
+  section:only-of-type .sidebar {
+    border-radius: 7.5px 0 0 7.5px;
   }
 }

@@ -12,7 +12,7 @@ $graydark: darken($gray, 20);
 $white: hsla(0, 0%, 96%, 1);
 $black: hsla(0, 0%, 19%, 1);
 $rad: 7.5px;
-$pad: 5vw;
+$pad: 3vw;
 
 .fed-dark {
 	$dark: hsla(0, 0%, 19%, 1);
@@ -140,9 +140,11 @@ header {
 }
 
 nav, footer {font-size: 1em; padding: 2em $pad;}
-main, section {font-size: 1.5em;padding: 2em $pad;}
+main {padding: 2em $pad;}
+main, section {font-size: 1.5em;}
+section .sidebar {padding: 2em $pad;}
 
-section {background-color: $graylite;}
+section .ad, section .sidebar {background-color: $graylite;}
 
 article {
 	padding-bottom: 2em;
@@ -259,14 +261,30 @@ footer {
 		display: flex;
 		align-items: flex-start;
 	}
-	main {flex: 5;}
-	section {
-		flex: 2;
-		border: {
-			top-left-radius: $rad;
-			bottom-left-radius: $rad;
+	.flex-2col {
+		main {flex: 5;}
+		section {flex: 2;}
+	}
+	.flex-3col {
+		
+	}
+	section .ad, section .sidebar {
+		margin-bottom: 2em;
+	}
+	section:first-of-type {
+		.ad, .sidebar {
+			border-radius: 0 $rad $rad 0;
 		}
 	}
+	section:last-of-type,
+	section:only-of-type {
+		.ad, .sidebar {
+			border-radius: $rad 0 0 $rad;
+		}
+	}
+	
+	
+	
 }
 
 
