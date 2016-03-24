@@ -145,9 +145,9 @@ main, section {font-size: 1.5em;padding: 2em $pad;}
 section {background-color: $graylite;}
 
 article {
-	padding-bottom: 4em;
+	padding-bottom: 2em;
 	border-bottom: 1px solid $graylite;
-	margin-bottom: 4em;
+	margin-bottom: 2em;
 	header {
 		padding: 0 0 5vw 0;
 		ul, ol {@extend %resetlist;}
