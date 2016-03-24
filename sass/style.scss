@@ -142,9 +142,14 @@ header {
 nav, footer {font-size: 1em; padding: 2em $pad;}
 main {padding: 2em $pad;}
 main, section {font-size: 1.5em;}
+section {display: flex;flex-direction: row;flex-wrap: wrap;align-items: flex-start;align-content: flex-start;}
 section .sidebar {padding: 2em $pad;}
-
-section .ad, section .sidebar {background-color: $graylite;}
+section .ad, section .sidebar {
+	background-color: $graylite;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0 0 2em 0;
+}
 
 article {
 	padding-bottom: 2em;
@@ -204,7 +209,6 @@ article {
 	small {font-size: .6em;}
 }
 
-
 .js-video {
 	height: 0;
 	padding-top: 25px;
@@ -231,15 +235,18 @@ article {
 	@extend %stripebg;
 }
 
-
-
 footer {
 	background-color: $black;
 	color: $white;
 }
 
-
+/* small up */
 @media only screen and (min-width: 40.063em) {
+	section .ad, section .sidebar {
+		width: calc(50% - #{$pad * 2});
+		margin: 0 $pad 2em;
+		border-radius: $rad;
+	}
 	header {
 		nav {
 			h1 a {
@@ -251,8 +258,13 @@ footer {
 		}
 	}
 }
-
+/* medium up */
 @media only screen and (min-width: 64.063em) {
+	section {display: block;}
+	section .ad, section .sidebar {
+		width: auto;
+		margin: 0 0 2em 0;
+	}
 	header nav {
 		display: flex;
 		justify-content: space-between;
@@ -262,14 +274,11 @@ footer {
 		align-items: flex-start;
 	}
 	.flex-2col {
-		main {flex: 5;}
-		section {flex: 2;}
+		main {flex: 2;}
+		section {flex: 1;}
 	}
 	.flex-3col {
 		
-	}
-	section .ad, section .sidebar {
-		margin-bottom: 2em;
 	}
 	section:first-of-type {
 		.ad, .sidebar {
@@ -282,9 +291,20 @@ footer {
 			border-radius: $rad 0 0 $rad;
 		}
 	}
-	
-	
-	
+}
+/* large up */
+@media only screen and (min-width: 90.063em) {
+	.flex-2col {
+		main {flex: 5;}
+		section {flex: 2;}
+	}
+}
+/* xlarge up */
+@media only screen and (min-width: 120.063em) {
+	.flex-2col {
+		main {flex: 3;}
+		section {flex: 1;}
+	}
 }
 
 

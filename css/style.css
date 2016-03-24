@@ -2988,12 +2988,33 @@ main, section {
   font-size: 1.5em;
 }
 
+section {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+}
+
 section .sidebar {
   padding: 2em 3vw;
 }
 
 section .ad, section .sidebar {
   background-color: #f2f2f2;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 0 2em 0;
 }
 
 article {
@@ -3092,7 +3113,14 @@ footer {
   color: whitesmoke;
 }
 
+/* small up */
 @media only screen and (min-width: 40.063em) {
+  section .ad, section .sidebar {
+    width: calc(50% - 6vw);
+    margin: 0 3vw 2em;
+    border-radius: 7.5px;
+  }
+
   header nav h1 a {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3112,7 +3140,17 @@ footer {
     display: block;
   }
 }
+/* medium up */
 @media only screen and (min-width: 64.063em) {
+  section {
+    display: block;
+  }
+
+  section .ad, section .sidebar {
+    width: auto;
+    margin: 0 0 2em 0;
+  }
+
   header nav {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3132,18 +3170,14 @@ footer {
   }
 
   .flex-2col main {
-    -webkit-flex: 5;
-        -ms-flex: 5;
-            flex: 5;
-  }
-  .flex-2col section {
     -webkit-flex: 2;
         -ms-flex: 2;
             flex: 2;
   }
-
-  section .ad, section .sidebar {
-    margin-bottom: 2em;
+  .flex-2col section {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 
   section:first-of-type .ad, section:first-of-type .sidebar {
@@ -3154,5 +3188,31 @@ footer {
   section:only-of-type .ad,
   section:only-of-type .sidebar {
     border-radius: 7.5px 0 0 7.5px;
+  }
+}
+/* large up */
+@media only screen and (min-width: 90.063em) {
+  .flex-2col main {
+    -webkit-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+  }
+  .flex-2col section {
+    -webkit-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+}
+/* xlarge up */
+@media only screen and (min-width: 120.063em) {
+  .flex-2col main {
+    -webkit-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
+  .flex-2col section {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 }
